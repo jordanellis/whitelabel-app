@@ -10,7 +10,6 @@ import LandingPage from "./components/LandingPage";
 import AccountsPage from "./components/AccountsPage";
 
 export default function App() {
-  // https://mui.com/material-ui/customization/theming/
   const theme = createTheme(__CLIENT_CONFIG__.theme);
 
   return (
@@ -18,7 +17,7 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <BrowserRouter>
-          <Box sx={{ bgcolor: "background.paper", height: "100vh" }}>
+          <Box sx={{ bgcolor: "primary.main", height: "100vh" }}>
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/accounts/" element={<AccountsPage />} />
